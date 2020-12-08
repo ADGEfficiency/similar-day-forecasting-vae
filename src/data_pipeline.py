@@ -4,9 +4,6 @@ import pandas as pd
 
 from shutil import rmtree
 
-region = 'NSW1'
-sample = 'demand_2015-01_clean.csv'
-
 raw = load_csvs('raw', recursive=True, match='clean', verbose=True)
 raw = {k.split('/')[-1]: v for k, v in raw.items()}
 

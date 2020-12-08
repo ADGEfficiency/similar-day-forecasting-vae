@@ -1,15 +1,25 @@
-process the raw nem data
-- remove columns
-- split into region (one file per region)
-- save a copy with all data for one region
-- checks on missingc values, correct number of rows
-
 https://docs.streamlit.io/en/stable/getting_started.html
 
-todo
+# todo
+
+# baselines
+- weighted average of -1 and -7
+
+## app
 - plot the errors for each day
 
+all regions plot:
+- fill in the backgrounds of the labels on the time series plots
+- show day of week on the plot of all regions
 
+baseline plots
+- plot the best and worst days
 
-baselines
-- weighted average of -1 and -7
+## data pipeline
+- checks on missing values, correct number of rows
+
+## vae
+
+- create features
+- train model
+- implement similarity

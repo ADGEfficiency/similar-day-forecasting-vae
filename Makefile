@@ -39,6 +39,8 @@ dl:
 
 pipeline:
 	python3 src/data_pipeline.py
+
+baselines:
 	python3 src/baselines.py
 
 app:

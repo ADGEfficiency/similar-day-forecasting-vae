@@ -35,7 +35,8 @@ def run_baseline(name, data, day_len=288, season_len=1):
             'target': target[idx, :],
             'pred_index': pd.to_datetime(pred_index.iloc[idx, :]),
             'target_index': pd.to_datetime(target_index.iloc[idx, :]),
-            'errors': pred[idx, :] - target[idx, :]
+            'errors': pred[idx, :] - target[idx, :],
+            'abs-errors': abs(pred[idx, :] - target[idx, :])
         })
         day = day.split(' ')[0]
         path = DATAHOME / 'final' / 'baselines' / name / region

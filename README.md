@@ -12,12 +12,19 @@ $ make requirements; make dotenv; make init;
 
 ## Data pipeline
 
+Use `nem-data` to download raw AEMO data and put into `DATAHOME/raw`
+
 ```bash
 $ make dl
+```
+
+Run the data processing pipeline into `DATAHOME/processed` & the baselines into `DATAHOME/final`:
+
+```bash
 $ make pipe
 ```
 
-## Use
+## Streamlit app
 
 ```bash
 $ make app
